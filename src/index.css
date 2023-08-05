@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+@layer components {
+      .input-box {
+        @apply w-32 h-10 outline-none rounded-md pl-4
+      }
+      .circle {
+            @apply w-12 h-12 border border-black rounded-full  relative
+      }
+      .circle-text{
+           @apply absolute text-xl top-2 left-4
+      }
+    }
